@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .title {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 52px;
+        fill: url(#textGrad);
+      }
+      .subtitle {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        fill: #94a3b8;
+      }
+      .badge-text {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        fill: #38bdf8;
+      }
+      @keyframes floatNode {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      @keyframes pulseRing {
+        0% { r: 12px; opacity: 0.8; }
+        50% { r: 20px; opacity: 0.2; }
+        100% { r: 12px; opacity: 0.8; }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -40; }
+      }
+      .floating-node { animation: floatNode 4s ease-in-out infinite; }
+      .pulse-ring { animation: pulseRing 3s ease-in-out infinite; }
+      .connecting-line {
+        stroke: #475569;
+        stroke-width: 2;
+        stroke-dasharray: 6 4;
+        animation: dashMove 2s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Background Dynamic Network Graphic (Positioned to sides so text remains fully visible in foreground) -->
+  <g opacity="0.35">
+    <!-- Left Background Graphic -->
+    <line x1="80" y1="150" x2="160" y2="80" class="connecting-line" />
+    <line x1="80" y1="150" x2="160" y2="220" class="connecting-line" />
+    <circle cx="80" cy="150" r="16" fill="#38bdf8" />
+    <circle cx="160" cy="80" r="10" fill="#818cf8" />
+    <circle cx="160" cy="220" r="10" fill="#c084fc" />
+
+    <!-- Right Background Graphic -->
+    <line x1="1100" y1="150" x2="1010" y2="80" class="connecting-line" />
+    <line x1="1100" y1="150" x2="1010" y2="220" class="connecting-line" />
+    <line x1="1010" y1="80" x2="940" y2="150" class="connecting-line" />
+    <line x1="1010" y1="220" x2="940" y2="150" class="connecting-line" />
+    <circle cx="1100" cy="150" r="18" fill="#38bdf8" />
+    <circle cx="1010" cy="80" r="12" fill="#818cf8" />
+    <circle cx="1010" cy="220" r="12" fill="#c084fc" />
+    <circle cx="940" cy="150" r="14" fill="#6366f1" />
+  </g>
+
+  <!-- Dynamic Glowing Elements -->
+  <circle cx="1010" cy="80" r="16" fill="none" stroke="#818cf8" stroke-width="2" class="pulse-ring" />
+  <circle cx="1100" cy="150" r="22" fill="none" stroke="#38bdf8" stroke-width="2" class="pulse-ring" />
+
+  <!-- Foreground Content Block -->
+  <g transform="translate(100, 0)">
+    <!-- Pill Badge -->
+    <rect x="0" y="45" width="280" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="14" y="66" class="badge-text">💎 ENTERPRISE DATA ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="135" class="title">Awesome Master Data Management</text>
+
+    <!-- Decorative Accent Bar -->
+    <rect x="0" y="155" width="560" height="5" rx="2.5" fill="url(#accentGrad)" filter="url(#glow)" />
+
+    <!-- Subtitle -->
+    <text x="0" y="200" class="subtitle">Curated SaaS Platforms, Open-Source MDM Hubs &amp; Entity Resolution</text>
+
+    <!-- Feature Tags -->
+    <g transform="translate(0, 225)">
+      <rect x="0" y="0" width="140" height="28" rx="6" fill="#0f172a" stroke="#334155" />
+      <text x="12" y="18" font-family="sans-serif" font-size="12" fill="#cbd5e1">👑 Golden Records</text>
+
+      <rect x="150" y="0" width="160" height="28" rx="6" fill="#0f172a" stroke="#334155" />
+      <text x="162" y="18" font-family="sans-serif" font-size="12" fill="#cbd5e1">⚡ Entity Resolution</text>
+
+      <rect x="320" y="0" width="150" height="28" rx="6" fill="#0f172a" stroke="#334155" />
+      <text x="332" y="18" font-family="sans-serif" font-size="12" fill="#cbd5e1">🛡️ Data Governance</text>
+    </g>
+  </g>
+</svg>

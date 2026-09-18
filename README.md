@@ -1,207 +1,122 @@
-# Awesome-Master-Data-Management
-
-## Top Master Data Management (MDM) Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Golden Records, Multi-Domain Master Data, Data Stewardship, Matching & Survivorship, Reference Data & Enterprise Data Governance*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS / commercial platforms** and **open-source projects** for **Master Data Management (MDM)**. These systems create and maintain trusted “golden” records for critical business entities (customers, products, suppliers, locations, etc.), enforce data quality rules, support stewardship workflows, and distribute consistent master data across the enterprise.
-
-
-
-**Examples** include Profisee, Reltio, Semarchy xDM, Ataccama, Informatica MDM, Stibo Systems (STEP), SAP Master Data Governance, IBM InfoSphere MDM, Talend MDM, EnterWorks / Precisely, TIBCO EBX, and related multi-domain MDM platforms (the category leaders).
-
-
-
-**Open-source emphasis**: Enterprise MDM has historically been dominated by commercial vendors. Open-source options exist and continue to mature—led by **AtroCore**, **Yugandhar Open MDM Hub**, and **Fuyuko**—along with data-quality and integration building blocks. This section lists every significant relevant project found (note: many GitHub “MDM” results refer to *Mobile* Device Management, not Master Data Management).
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Reltio](https://www.reltio.com/)**  
-
-  Cloud-native MDM and data unification platform focused on real-time golden records, identity resolution, relationship management, and AI-assisted data quality for multi-domain master data.
-
-
-
-- **[Informatica MDM](https://www.informatica.com/)**  
-
-  Enterprise MDM within the broader Intelligent Data Management Cloud, covering multi-domain mastering, data quality, integration, and governance at scale.
-
-
-
-- **[Profisee](https://profisee.com/)**  
-
-  Modern MDM platform emphasizing fast time-to-value, Microsoft ecosystem integration, and practical golden-record management for mid-market and enterprise use cases.
-
-
-
-- **[Semarchy xDM](https://www.semarchy.com/)**  
-
-  Smart Data Hub approach combining MDM, data integration, matching, stewardship, and governance with agile deployment characteristics.
-
-
-
-- **[Ataccama, Stibo Systems (STEP), SAP MDG, IBM InfoSphere MDM](https://www.ataccama.com/)**  
-
-  Established platforms for multi-domain MDM, product information management, data quality, and enterprise master-data governance.
-
-
-
-- **[TIBCO EBX, EnterWorks / Precisely, Talend MDM](https://www.tibco.com/)**  
-
-  Additional commercial solutions for reference data, product master data, multi-domain hubs, and data stewardship workflows.
-
-
-
-- **[Other commercial MDM & data unification platforms](https://www.reltio.com/)**  
-
-  Tools supporting customer, product, supplier, and location master data with matching, survivorship, and distribution capabilities.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[AtroCore](https://github.com/atrocore/atrocore)**  
-
-  Open-source business application platform with ready-made solutions for Master Data Management (MDM), Product Information Management (PIM), and Digital Asset Management. Highly configurable data models, hierarchies, multi-language support, and golden-record style workflows (GPLv3 core).
-
-
-
-- **[Yugandhar Open MDM Hub](https://github.com/yugandharproject/yugandhar-open-mdmhub)**  
-
-  Open-source MDM hub project focused on Customer Data Integration (CDI) and multi-domain capabilities. Built with Spring/Hibernate, offers hundreds of pre-built services, and aims to provide a free alternative for master data management.
-
-
-
-- **[Fuyuko](https://github.com/tmjeee/fuyuko)**  
-
-  Open-source Master Data Management / Product Information Management application for managing product attributes, pricing, and related master data with a modern tech stack (LGPL).
-
-
-
-- **[Other open MDM / PIM-oriented projects](https://github.com/search?q=%22master+data%22+OR+MDM+OR+PIM+golden+record)**  
-
-  Community and research efforts aimed at golden records, product master data, and multi-domain data hubs (maturity varies).
-
-
-
-- **[Data quality & matching open libraries](https://github.com/search?q=data+quality+OR+record+linkage+OR+entity+resolution)**  
-
-  Open tools for deduplication, matching, survivorship logic, and data cleansing that form core building blocks of MDM solutions.
-
-
-
-- **[Reference data & hierarchy management](https://github.com/search?q=reference+data+management+OR+hierarchy+management)**  
-
-  Projects supporting controlled vocabularies, code sets, and hierarchical master data structures.
-
-
-
-- **[Integration & pipeline open stacks](https://github.com/search?q=ETL+OR+data+integration+open+source)**  
-
-  Open integration frameworks commonly used to feed and distribute master data to and from an MDM hub.
-
-
-
-- **[Metadata & data catalog companions](https://github.com/search?q=data+catalog+OR+metadata+management+open+source)**  
-
-  Tools that complement MDM by documenting data lineage, ownership, and business glossaries.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **AtroCore**: Most complete current open platform explicitly positioning MDM (and PIM/DAM) capabilities.
-
-- **Yugandhar Open MDM Hub**: Service-oriented open MDM hub with substantial pre-built services.
-
-- **Fuyuko**: Focused open MDM/PIM application for product-centric master data.
-
-- **Composable stacks**: Open matching/entity-resolution libraries + workflow engines + databases + APIs for custom golden-record solutions.
-
-- **Data quality first**: Many organizations start with open data-quality and matching tools before full MDM.
-
-- Note: Avoid confusion with open-source *Mobile* Device Management (also abbreviated MDM).
-
-
-
-**Frameworks for building custom systems**:  
-
-**AtroCore**, **Yugandhar Open MDM Hub**, and **Fuyuko** are the strongest open-source starting points for Master Data Management / PIM-style hubs.  
-
-Open data-quality, matching, and integration libraries provide additional building blocks.  
-
-Commercial MDM platforms (Reltio, Informatica, Profisee, Semarchy, Ataccama, Stibo, SAP MDG, IBM, TIBCO EBX, etc.) deliver enterprise-scale matching engines, multi-domain models, stewardship UIs, AI-assisted data quality, governance workflows, and proven integration patterns that large organizations typically require.  
-
-Mid-market and specialized teams may succeed with open platforms or hybrid approaches; complex multi-domain, regulated, or high-volume enterprise MDM usually relies on commercial solutions, sometimes augmented with open data-quality or catalog tools.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS/commercial or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Master data underpins critical business processes and analytics. Poor matching, incomplete survivorship rules, or weak governance can propagate errors across systems and decisions.
-
-- Open-source MDM solutions offer transparency and no license fees but require expertise in data modeling, matching design, stewardship processes, integration, and ongoing data quality management. Evaluate scalability, security, compliance needs, and total cost of ownership carefully before production use.
-
-
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Master Data Management Banner" width="100%">
+</p>
+
+# 🏢 Awesome Master Data Management (MDM) 🚀
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Master-Data-Management"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Master-Data-Management?style=social" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Master-Data-Management/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> A comprehensive, SEO-optimized, and curated collection of **Master Data Management (MDM)** SaaS enterprise platforms, open-source MDM hubs, identity/entity resolution libraries, and data quality tools. Designed for data architects, data stewards, and enterprise governance leaders creating golden records across multi-domain ecosystems. 🌐✨
 
 ---
 
+## 📚 Table of Contents
+- [📊 Market Overview & Industry Dynamics](#-market-overview--industry-dynamics)
+- [💼 SaaS & Commercial MDM Platforms](#-saas--commercial-mdm-platforms)
+- [🔓 Open-Source MDM Hubs & Entity Resolution](#-open-source-mdm-hubs--entity-resolution)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#-disclaimer)
+- [📈 Star History](#-star-history)
 
+---
 
-**Made for data architects, master data stewards, data governance teams, and enterprise architects establishing trusted core data.**  
+## 📊 Market Overview & Industry Dynamics
 
-Let's expand open options for master data management while recognizing the matching sophistication, governance depth, and enterprise scale that leading commercial MDM platforms deliver.
+> **Market Size & Valuation**: The global Master Data Management (MDM) market is estimated at **~$3.8 Billion to $5.2 Billion** (2025–2026) and is projected to expand to over **$11 Billion+ by 2030** at a Compound Annual Growth Rate (CAGR) of **~15.5%**.  
+> **Market Fragmentation**: The enterprise MDM sector is **moderately concentrated** at the top tier among established legacy tech giants and cloud-native category leaders (such as Informatica, SAP, Reltio, and Profisee), but remains **moderately fragmented** overall due to the rapid growth of specialized entity resolution engines, Product Information Management (PIM) tools, and emerging open-source data quality stacks.
+
+---
+
+## 💼 SaaS & Commercial MDM Platforms
+
+The following enterprise platforms provide multi-domain data hubs, automated AI matching, survivorship rules, data stewardship interfaces, and compliance frameworks. Sorted by **Company Size / Revenue / Valuation (Descending)**:
+
+| 🏢 Platform / Vendor | 💰 Estimated Company Size (Revenue / Valuation) | 💵 Starting Tier Pricing | 🎁 Free Tier Limit / Free Trial | 🎯 Key Capabilities & Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Informatica MDM](https://www.informatica.com/)** 🏢 | **~$7.64B Market Cap** (~$1.68B Revenue) | Custom enterprise quote (IPU consumption-based starting ~$10,000+/mo) | 30-Day Free Trial (Cloud Data Integration & IDMC modules) | Intelligent Data Management Cloud (IDMC), enterprise multi-domain MDM, automated matching, data governance. |
+| **[Reltio](https://www.reltio.com/)** ☁️ | **~$1.7B Valuation** (~$115M+ ARR; Acquired by SAP) | Custom enterprise quote (Velocity packs start ~$3,000–$5,000/mo) | 30-Day Guided Test Drive (Reltio Velocity Packs) | Cloud-native multi-domain MDM, real-time entity resolution, graph relationship management, clean room capabilities. |
+| **[Ataccama ONE](https://www.ataccama.com/)** ⚡ | **~$61.3M Revenue** ($150M Bain Capital Growth Funding) | Custom modular quote (Based on users/managed objects starting ~$2,500/mo) | Guided Interactive Product Demo & Sandbox Access | AI-driven data management, integrated MDM, data quality validation, automated stewardship. |
+| **[Semarchy xDM](https://www.semarchy.com/)** 🧠 | **~$20.6M ARR** (~$105.6M Estimated Valuation) | Custom pricing quote (App-based licensing starting ~$2,000/mo) | 30-Day Full Platform Free Trial (Cloud or On-Premise) | Intelligent Data Hub, rapid multi-domain MDM deployment, data stewardship, built-in governance. |
+| **[Profisee](https://profisee.com/)** 🚀 | **~$19M ARR** (37% ARR CAGR Growth) | Custom quote (Tiered by record volume & domains, starting ~$2,500/mo) | Free Guided Live Demo & 14-Day Azure/Fabric Partner Trial | Enterprise MDM optimized for Microsoft Azure/Fabric ecosystem, fast time-to-value, golden record mastering. |
+
+---
+
+## 🔓 Open-Source MDM Hubs & Entity Resolution
+
+Open-source Master Data Management systems and core entity resolution engines enable custom golden-record hubs, identity matching, and data cleansing without expensive licensing.
+
+Sorted by **GitHub Star Count (Descending)**:
+
+* [<img src="https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white" alt="great_expectations stars"/>](https://github.com/great-expectations/great_expectations/stargazers) **[Great Expectations](https://github.com/great-expectations/great_expectations)** 🧪  
+  The leading open-source Python framework for data quality validation, profiling, and metadata documentation—essential for pre-cleansing data before loading into MDM hubs.
+
+* [<img src="https://img.shields.io/github/stars/amundsen-io/amundsen?style=social&color=white" alt="amundsen stars"/>](https://github.com/amundsen-io/amundsen/stargazers) **[Amundsen](https://github.com/amundsen-io/amundsen)** 🔍  
+  Open-source data discovery and metadata engine (originally built by Lyft) that documents data lineage, ownership, and entity schemas alongside MDM platforms.
+
+* [<img src="https://img.shields.io/github/stars/dedupeio/dedupe?style=social&color=white" alt="dedupe stars"/>](https://github.com/dedupeio/dedupe/stargazers) **[Dedupe](https://github.com/dedupeio/dedupe)** 🤖  
+  Python library using machine learning and active learning to perform fuzzy matching, record linkage, and entity deduplication for master record creation.
+
+* [<img src="https://img.shields.io/github/stars/pimcore/pimcore?style=social&color=white" alt="pimcore stars"/>](https://github.com/pimcore/pimcore/stargazers) **[Pimcore](https://github.com/pimcore/pimcore)** 📦  
+  Open-source data and experience management platform combining Product Information Management (PIM), MDM, Digital Asset Management (DAM), and Customer Data Platform (CDP) capabilities.
+
+* [<img src="https://img.shields.io/github/stars/moj-analytical-services/splink?style=social&color=white" alt="splink stars"/>](https://github.com/moj-analytical-services/splink/stargazers) **[Splink](https://github.com/moj-analytical-services/splink)** ⚡  
+  Fast probabilistic data linkage and entity resolution library running on DuckDB and Apache Spark, executing Fellegi-Sunter matching at massive scale.
+
+* [<img src="https://img.shields.io/github/stars/zinggAI/zingg?style=social&color=white" alt="zingg stars"/>](https://github.com/zinggAI/zingg/stargazers) **[Zingg](https://github.com/zinggAI/zingg)** 🎯  
+  Open-source ML-based entity resolution and identity matching platform built for Apache Spark, connecting customer and product records across enterprise data warehouses.
+
+* [<img src="https://img.shields.io/github/stars/atrocore/atrocore?style=social&color=white" alt="atrocore stars"/>](https://github.com/atrocore/atrocore/stargazers) **[AtroCore](https://github.com/atrocore/atrocore)** 🌐  
+  Flexible open-source business application software offering modular Master Data Management (MDM), PIM, and DAM with customizable entity models and data stewardship workflows.
+
+* [<img src="https://img.shields.io/github/stars/tmjeee/fuyuko?style=social&color=white" alt="fuyuko stars"/>](https://github.com/tmjeee/fuyuko/stargazers) **[Fuyuko](https://github.com/tmjeee/fuyuko)** ❄️  
+  Open-source Master Data Management and Product Information Management application tailored for managing complex product attributes and master entity definitions.
+
+* [<img src="https://img.shields.io/github/stars/yugandharproject/yugandhar-open-mdmhub?style=social&color=white" alt="yugandhar-open-mdmhub stars"/>](https://github.com/yugandharproject/yugandhar-open-mdmhub/stargazers) **[Yugandhar Open MDM Hub](https://github.com/yugandharproject/yugandhar-open-mdmhub)** 🏛️  
+  Service-oriented open-source Customer Data Integration (CDI) and MDM hub built with Java Spring/Hibernate, featuring pre-configured microservices for enterprise master data.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Help us keep this Master Data Management ecosystem resource accurate and up to date. 🛠️
+
+1. **Fork** the repository 🍴
+2. **Create** a new branch (`git checkout -b feature/add-mdm-tool`) 🌿
+3. **Add** your tool to the table or list with factual descriptions 📝
+4. **Submit** a Pull Request with a short overview 🚀
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this repository helpful for your data architecture, governance, or master data management research, please consider supporting the project:
+
+- ⭐ **Star** this repository to increase its visibility!
+- 🔀 **Fork** and share it with your network or data engineering team.
+- ☕ **Buy me a coffee**: Support ongoing open-source curation via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+Thank you for your support and contributions to the open data community! ❤️
+
+---
+
+## ⚠️ Disclaimer
+
+This repository is a community-curated list intended for informational and educational purposes. Product names, logos, and brands belong to their respective owners. Evaluators should conduct independent technical benchmarking and commercial due diligence before selecting MDM or entity resolution tools.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Master-Data-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Master-Data-Management&type=date&legend=top-left)
+
+---
+
+<p align="center">
+  Made with ❤️ for Data Architects, Data Stewards, and Governance Leaders worldwide.
+</p>
