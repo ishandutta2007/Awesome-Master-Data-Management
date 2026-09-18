@@ -51,7 +51,7 @@ The following enterprise platforms provide multi-domain data hubs, automated AI 
 
 Open-source Master Data Management systems and core entity resolution engines enable custom golden-record hubs, identity matching, and data cleansing without expensive licensing.
 
-Sorted by **GitHub Star Count (Descending)**:
+Sorted by **GitHub Stars_Count (Descending)**:
 
 * [<img src="https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white" alt="great_expectations stars"/>](https://github.com/great-expectations/great_expectations/stargazers) **[Great Expectations](https://github.com/great-expectations/great_expectations)** 🧪  
   The leading open-source Python framework for data quality validation, profiling, and metadata documentation—essential for pre-cleansing data before loading into MDM hubs.
